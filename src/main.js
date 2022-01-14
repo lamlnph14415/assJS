@@ -9,12 +9,19 @@ const print = (content) => {
 
 router.on({
     "/": () => {
-    print(HomePage.render());  },
-    "/about": () => {
-    print("About Page");
+        print(HomePage.render());
     },
-    "/product": () => {
-     print("Product Page");
+    "/tuyensinh": () => {
+        print("Trang tuyển sinh");
+    },
+    "/chuongtringdaotao": () => {
+        print("Chương trình đào tạo");
+    },
+    "/goctuyensinh": () => {
+        print("Góc tuyển sinh");
+    },
+    "/tuyendung": () => {
+        print("Tuyển dụng");
     },
     "/news/:id": (value) => {
         console.log(value.data.id);
